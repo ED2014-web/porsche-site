@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Premium Experience</title>
+    <style>
+        /* Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #000;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        header h1 {
+            text-align: center;
+            color: #E10600;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: #E10600; }
+
+        /* Hero */
+        .hero {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/2019_Porsche_911_Carrera_S_IMG_0912.jpg/1200px-2019_Porsche_911_Carrera_S_IMG_0912.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #E10600;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #E10600;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: scale(1.05); }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .card h3 {
+            padding: 15px;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            padding: 0 15px 15px 15px;
+            font-size: 1em;
+            color: #ccc;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Porsche Premium Experience</h1>
+    <nav>
+        <a href="#models">Modèles</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero fade-in">
+    Vivez l'expérience Porsche
+</div>
+
+<div class="section fade-in" id="models">
+    <h2>Nos Modèles</h2>
+    <p>Découvrez la gamme complète de véhicules Porsche, alliant performance et design. Chaque modèle offre une expérience unique sur route et sur circuit.</p>
+    <div class="gallery">
+        <div class="card">
+            <img src="https://www.autodel.fr/wp-content/uploads/2021/04/992.jpg" alt="Porsche 911">
+            <h3>Porsche 911</h3>
+            <p>Une légende intemporelle, alliant puissance et design iconique.</p>
+            <a class="btn" href="mailto:porsche-site@outlook.fr">Voir plus</a>
+        </div>
+        <div class="card">
+            <img src="https://www.motoroids.com/wp-content/uploads/2019/09/Porsche-Taycan-studio-front-1200x774.jpg" alt="Porsche Taycan">
+            <h3>Porsche Taycan</h3>
+            <p>100% électrique, une expérience de conduite futuriste et performante.</p>
+            <a class="btn" href="mailto:porsche-site@outlook.fr">Voir plus</a>
+        </div>
+        <div class="card">
+            <img src="https://www.autodel.fr/wp-content/uploads/2021/07/porsche-cayenne-couverture-scaled.jpg" alt="Porsche Cayenne">
+            <h3>Porsche Cayenne</h3>
+            <p>Performance et confort réunis dans un SUV de luxe.</p>
+            <a class="btn" href="mailto:porsche-site@outlook.fr">Voir plus</a>
+        </div>
+    </div>
+</div>
+
+<div class="section fade-in" id="about">
+    <h2>À propos de nous</h2>
+    <p>Nous créons une expérience unique pour tous les passionnés de voitures de luxe. Notre objectif est d'offrir innovation, puissance et élégance à chaque modèle présenté.</p>
+    <a class="btn" href="mailto:porsche-site@outlook.fr">En savoir plus</a>
+</div>
+
+<div class="section fade-in" id="contact">
+    <h2>Contact</h2>
+    <p>Pour plus d'informations, contactez-nous via notre mail directement.</p>
+    <a class="btn" href="mailto:porsche-site@outlook.fr">Envoyer un mail</a>
+</div>
+
+<footer>
+    &copy; 2025 Porsche Premium Experience | 
+    <a href="mailto:porsche-site@outlook.fr" style="color:#E10600;">Nous écrire</a>
+</footer>
+
+</body>
+</html>
